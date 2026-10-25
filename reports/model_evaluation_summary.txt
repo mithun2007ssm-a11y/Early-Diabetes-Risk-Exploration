@@ -1,0 +1,71 @@
+MODEL EVALUATION SUMMARY
+
+EDUCATIONAL ONLY. This project explores a public dataset and evaluates basic machine-learning models. It is not validated for clinical use and must not be used to diagnose, screen, or make treatment decisions.
+
+Metrics below describe this dataset and one test split only. They are not evidence of clinical suitability.
+
+--- Dummy baseline ---
+Accuracy: 0.649
+Precision (label 1): 0.000
+Sensitivity / recall (label 1): 0.000
+Specificity (label 0): 1.000
+Confusion matrix (rows=true labels 0,1; columns=predicted 0,1):
+[[100   0]
+ [ 54   0]]
+Classification report:
+              precision    recall  f1-score   support
+
+           0       0.65      1.00      0.79       100
+           1       0.00      0.00      0.00        54
+
+    accuracy                           0.65       154
+   macro avg       0.32      0.50      0.39       154
+weighted avg       0.42      0.65      0.51       154
+
+Interpretation: false negatives and false positives both matter. This model is not validated for clinical use.
+
+--- Logistic regression ---
+Accuracy: 0.708
+Precision (label 1): 0.600
+Sensitivity / recall (label 1): 0.500
+Specificity (label 0): 0.820
+Confusion matrix (rows=true labels 0,1; columns=predicted 0,1):
+[[82 18]
+ [27 27]]
+Classification report:
+              precision    recall  f1-score   support
+
+           0       0.75      0.82      0.78       100
+           1       0.60      0.50      0.55        54
+
+    accuracy                           0.71       154
+   macro avg       0.68      0.66      0.67       154
+weighted avg       0.70      0.71      0.70       154
+
+Interpretation: false negatives and false positives both matter. This model is not validated for clinical use.
+
+--- Decision tree ---
+Accuracy: 0.786
+Precision (label 1): 0.698
+Sensitivity / recall (label 1): 0.685
+Specificity (label 0): 0.840
+Confusion matrix (rows=true labels 0,1; columns=predicted 0,1):
+[[84 16]
+ [17 37]]
+Classification report:
+              precision    recall  f1-score   support
+
+           0       0.83      0.84      0.84       100
+           1       0.70      0.69      0.69        54
+
+    accuracy                           0.79       154
+   macro avg       0.76      0.76      0.76       154
+weighted avg       0.78      0.79      0.79       154
+
+Interpretation: false negatives and false positives both matter. This model is not validated for clinical use.
+
+COMPARISON TABLE
+              Model  Accuracy  Precision (label 1)  Sensitivity / Recall (label 1)  Specificity (label 0)  True negatives  False positives  False negatives  True positives
+     Dummy baseline     0.649                0.000                           0.000                   1.00             100                0               54               0
+Logistic regression     0.708                0.600                           0.500                   0.82              82               18               27              27
+      Decision tree     0.786                0.698                           0.685                   0.84              84               16               17              37

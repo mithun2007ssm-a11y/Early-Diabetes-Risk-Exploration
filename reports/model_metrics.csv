@@ -1,0 +1,4 @@
+Model,Accuracy,Precision (label 1),Sensitivity / Recall (label 1),Specificity (label 0),True negatives,False positives,False negatives,True positives
+Dummy baseline,0.6493506493506493,0.0,0.0,1.0,100,0,54,0
+Logistic regression,0.7077922077922078,0.6,0.5,0.82,82,18,27,27
+Decision tree,0.7857142857142857,0.6981132075471698,0.6851851851851852,0.84,84,16,17,37

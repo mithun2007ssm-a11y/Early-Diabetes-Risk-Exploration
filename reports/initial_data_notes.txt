@@ -1,0 +1,44 @@
+EARLY DIABETES RISK DATASET EXPLORATION — INITIAL NOTES
+
+EDUCATIONAL ONLY. This project explores a public dataset and evaluates basic machine-learning models. It is not validated for clinical use and must not be used to diagnose, screen, or make treatment decisions.
+
+Dataset source URL used by this script:
+https://raw.githubusercontent.com/Yuridna/pima-indians-diabetes-database/master/diabetes.csv
+
+Local file: data/diabetes.csv
+Rows: 768
+Columns: 9
+Column names: Pregnancies, Glucose, BloodPressure, SkinThickness, Insulin, BMI, DiabetesPedigreeFunction, Age, Outcome
+Target column: Outcome
+Target labels observed:
+Outcome
+0    500
+1    268
+
+Missing values by column:
+Pregnancies                 0
+Glucose                     0
+BloodPressure               0
+SkinThickness               0
+Insulin                     0
+BMI                         0
+DiabetesPedigreeFunction    0
+Age                         0
+Outcome                     0
+
+Duplicate rows: 0
+
+DATA QUALITY AND ETHICS CHECKLIST
+- Read and cite the original dataset documentation and license/terms.
+- Verify how the target labels were collected before interpreting them.
+- This commonly used dataset represents a narrow population; results may not
+  generalize to other people or settings.
+- In this dataset, zero values in Glucose, BloodPressure, SkinThickness,
+  Insulin, and BMI are often treated as implausible placeholders in analyses.
+  This script treats those zeros as missing for analysis/modeling only. This is
+  an assumption that must be discussed and verified against documentation.
+- Associations are descriptive and do not establish causation.
+- A single train/test split is an educational estimate, not clinical validation.
+- False negatives and false positives both matter in health-related contexts.
+- Do not collect real personal health information in a public demo.
+- Do not use model outputs for diagnosis, screening, or treatment decisions.
